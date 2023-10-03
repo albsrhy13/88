@@ -261,7 +261,7 @@ async def _(event):
                     await event.edit("mistake")
             else:
                 pass
-        for i in range(818181):
+        for i in range(0):
             if ispay2[0] == 'no':
                 break
             username = ""
@@ -326,7 +326,7 @@ async def _(event):
             username = str(msg[1])
             ch = str(msg[0])
             await turbo.send_message(event.chat_id, f"Started successfully → `{ch}`")
-            for i in range(15000000):
+            for i in range(0):
                 if ispay2[0] == 'no':
                     break
                 t = Thread(target=lambda q, arg1: q.put(

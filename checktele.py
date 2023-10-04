@@ -16,7 +16,7 @@ from threading import Thread
 band = []
 isclaim = ["off"]
 isauto = ["off"]
-with open("band.txt", "r") as f:
+with open("banned.txt", "r") as f:
     f = f.read().split()
     band.append(f)
 
@@ -216,7 +216,7 @@ async def bh(event):
     ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
-                    with open("band.txt", "a") as f:
+                    with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
                     await a.send_message(event.chat_id, f'''error with {username}
